@@ -1,0 +1,11 @@
+package com.darknorth.peerisland.orderservice.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class ProductStockException extends RuntimeException {
+    public ProductStockException(String message) {
+        super(message);
+    }
+}
